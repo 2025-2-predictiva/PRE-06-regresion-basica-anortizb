@@ -9,7 +9,7 @@ from sklearn.metrics import mean_squared_error
 def test_01():
     """Test if the model is able to predict the MPG of a car."""
 
-    dataset = pd.read_csv("auto_mpg.csv")
+    dataset = pd.read_csv("files/input/auto_mpg.csv")
     dataset = dataset.dropna()
     dataset["Origin"] = dataset["Origin"].map(
         {1: "USA", 2: "Europe", 3: "Japan"},
